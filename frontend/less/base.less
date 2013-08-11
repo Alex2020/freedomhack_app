@@ -1,0 +1,217 @@
+body {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: @montserrat;
+    color: @blue;
+}
+
+/* LAYOUT STYLES */
+
+html {
+	background: url(../img/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+/* LINKS */
+
+a, a:visited {
+    color: @orange;
+    text-decoration: none;
+    // padding-bottom: 1px;
+    // border-bottom: 1px @orange solid;
+    .t1;
+
+    /* on hover */
+    &:hover, &:focus {
+        color: @orange;
+    }
+
+    /* on click */
+    &:active {
+
+    }
+
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+    }
+}
+
+/* HEADINGS */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: @montserrat;
+	font-weight: 700;
+    text-rendering: optimizelegibility;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, .h1 {
+	font-size: 60px;
+	color: @orange;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1.25;
+ }
+
+h2, .h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+}
+
+p, .p {
+	font-size: 18px;
+}
+
+
+/* HEADER */
+
+header {
+
+	background: @orange;
+	position: relative;
+
+	.inner-header {
+		max-width: 960px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	.logo {
+
+		float: left;
+		margin-top: 28px;
+
+		img {
+			float: left;
+		}
+	}
+
+	.top-menu {
+		float: right;
+		display: inline-block;
+	}
+
+}
+
+
+/* NAVIGATION */
+
+
+nav.top-menu {
+
+	ul {
+	
+		margin: 0;
+	
+		li {
+			float: left;
+
+			a, a:visited {
+				text-transform: uppercase;
+				color: @white;
+				text-decoration: none;
+				padding: 30px;
+				display: block;
+    			
+    			&:hover, &:focus {
+    				color: @blue;
+    			}
+
+			}
+		}
+	}
+}
+
+/* FOOTER */
+
+footer {
+	position: absolute;
+	bottom: 40px;
+	color: @white;
+	a, a:visited {
+		color: @white;
+		&:hover {
+			color: @orange;
+		}
+	}
+}
+
+
+/* HOME */
+
+
+#home {
+
+	.content {
+		text-align: center;
+	}
+
+	.inner-content {
+		margin: 25% auto 0;
+		display: inline-block;
+	}
+	.col-left {
+		float: left;
+		h1 {
+			text-align: right;
+			color: @white;
+		}
+	}
+	.col-right{
+		float: left;
+		margin-left: 60px;
+		color: @white;
+		text-align: left;
+		a {
+			.h2;
+			background: @orange;
+			color: @white;
+			padding: 10px 20px;
+			display: block;
+			&:hover {
+				color: @blue;
+				// background: @white;
+			}
+		}
+	}
+}
+
+/* FANCY STYLES */
+
+
+::-moz-selection {
+    background: @blue;
+    color: @white;
+    text-shadow: none;
+}
+
+::selection {
+    background: @blue;
+    color: @white;
+    text-shadow: none;
+}
